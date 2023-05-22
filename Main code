@@ -33,16 +33,16 @@ void loop()
           right();
           break;
         case 'G':
-          10oClock();
+          fleft();
           break;
         case 'H':
-          8oClock();
+          bleft();
           break;
         case 'I':
-          2oClock();
+          fright();
           break;
         case 'J':
-          4oClock();
+          bright();
           break;
         case 'W':
           right360();
@@ -115,7 +115,7 @@ void Stop(){
   motor4.setSpeed(0); 
   motor4.run(RELEASE); 
 }
-void 10oClock(){
+void fleft(){
   motor1.setSpeed(200); 
   motor1.run(RELEASE); 
   motor2.setSpeed(200); 
@@ -125,7 +125,7 @@ void 10oClock(){
   motor4.setSpeed(200); 
   motor4.run(RELEASE); 
 }
-void 2oClock(){
+void fright(){
   motor1.setSpeed(200); 
   motor1.run(FORWARD); 
   motor2.setSpeed(200); 
@@ -135,7 +135,7 @@ void 2oClock(){
   motor4.setSpeed(200); 
   motor4.run(FORWARD); 
 }
-void 8oClock(){
+void bleft(){
   motor1.setSpeed(200); 
   motor1.run(BACKWARD); 
   motor2.setSpeed(200); 
@@ -145,7 +145,7 @@ void 8oClock(){
   motor4.setSpeed(200); 
   motor4.run(BACKWARD); 
 }
-void 4oClock(){
+void bright(){
   motor1.setSpeed(200); 
   motor1.run(RELEASE); 
   motor2.setSpeed(200); 
